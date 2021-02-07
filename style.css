@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,700&display=swap');
+body{
+    font-family: Poppins, sans-serif;
+}
+
+main {
+  width: min(90vw, 800px);
+  margin: auto;
+}
+
+/* toggle dark mode ~ light mode */
+.toggle-checkbox:checked {
+    @apply: right-0 border-green-400;
+    right: 0;
+    border-color: #68D391;
+  }
+.toggle-checkbox:checked + .toggle-label {
+    @apply: bg-green-400;
+    background-color: #68D391;
+  } 
+
+ /* New transaction */ 
+  #add-transaction.active {
+    display: none;
+    opacity: 0;  
+    visibility: hidden;
+  }
+
+
