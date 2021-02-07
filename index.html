@@ -4,13 +4,120 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title></title>
-
-
+      <title>dev.finance$</title>
       <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+      <link href="style.css" rel="stylesheet"> 
   </head>
 
-  <body>
+  <body class="bg-gray-100">
+    <header class="bg-gradient-to-r w-full from-green-300 via-blue-300 to-purple-500 h-52 p-6">
       
+      <!--Dark toggle mode-->
+      <div class="right-4 absolute inline-block w-10 mr-2 align-middle select-none transition duration-700 ease-in">
+        <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+        <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+      </div>
+      <!-- End toggle Dark mode-->
+
+      <div class="flex flex-row justify-center p-8">
+        <img class="w-64" src="./assets/logo.svg" alt="logo dev.finance">
+      </div>
+          
+    </header>
+    
+    <main>
+      <section id="balance" class="flex flex-row gap-6 justify-center relative -top-16 text-gray-700">
+        
+        <div class="bg-white w-64 p-7 rounded shadow-2xl">
+          <div class="mb-5 flex flex-row justify-between items-center">
+            <h3 class="">Income</h3>
+            <img src="./assets/income.svg" alt="Income">
+          </div>
+          <p class="text-2xl text-bold">US$ 5.000,00</p>
+        </div>
+
+        <div class="bg-white w-64 p-7 rounded shadow-2xl">
+          <div class="mb-5 flex flex-row justify-between items-center">
+            <h3 class="">Expenses</h3>
+            <img src="./assets/expense.svg" alt="Expenses">
+          </div>
+          <p class="text-2xl text-bold">US$ 2.000,00</p>
+        </div>
+    
+        <div class="bg-green-400 w-64 p-7 rounded text-white shadow-2xl">
+          <div class="mb-5 flex flex-row justify-between items-center">
+            <h3 class="">Total</h3>
+            <img src="./assets/total.svg" alt="Total">
+          </div>
+          <p class="text-2xl text-bold">US$ 3.000,00</p>
+        </div>
+
+      </section>
+  
+      <section id="transactions" class="mb-36">
+        
+        <table class="table-auto divide-y-8 divide-gray-100 w-full">
+          <thead class="bg-white">
+            <tr class="text-gray-500 text-sm ">
+              <th class=" font-normal p-4">Description</th>
+              <th class=" font-normal p-4">Value</th>
+              <th class=" font-normal p-4">Date</th>
+              <th class=" p-4"></th>
+            </tr>
+          </thead>
+          <tbody class="table-auto text-center divide-y-8 divide-gray-100 w-full">
+            <tr class="bg-gray-50 hover:bg-white transition-colors duration-300"> 
+              <td class="text-gray-700 p-4">Netflix</td>
+              <td class="text-red-500 p-4">- US$ 17,99</td>
+              <td class="text-gray-600 p-4">02/04/2021</td>
+              <td class="p-4 cursor-pointer"> <img src="./assets/minus.svg" alt="Remove"></td>
+            </tr>
+            <tr class="bg-gray-50 hover:bg-white transition-colors duration-300"> 
+              <td class="text-gray-700 p-4">Ifood</td>
+              <td class="text-red-500 p-4">- US$ 10,54</td>
+              <td class="text-gray-600 p-4">01/23/2021</td>
+              <td class="p-4 cursor-pointer"> <img src="./assets/minus.svg" alt="Remove"></td>
+            </tr>
+            <tr class="bg-gray-50 hover:bg-white transition-colors duration-300"> 
+              <td class="text-gray-700 p-4">Wage</td>
+              <td class="text-green-400 p-4">+ US$ 5000,00</td>
+              <td class="text-gray-600 p-4">01/24/2021</td>
+              <td class="p-4 cursor-pointer"> <img src="./assets/minus.svg" alt="Remove"></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+    </main>
+
+    <!--Modal Overlay-->
+    <section id="add-transaction">
+      <div class="right-10 bottom-10 absolute">
+        <span class="flex h-16 w-16">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-16 w-16 bg-green-500 justify-center p-3 cursor-pointer">
+            <img src="./assets/total.svg" alt="Add New Transaction" class="h-10 w-10">
+          </span>
+        </span>
+      </div>
+    </section>
+
+    <section id="new-transaction">
+      <div class="">
+
+      </div>
+    </section>
+    <!--End Modal-->
+
+    <footer class="text-xs text-gray-400 text-center">
+      <p class="font-bold">dev.finance$</p>
+      <p>Created by <a href="http://rocketseat.com.br" class="hover:text-purple-500 transition-colors duration-300">Rocketseat</a>. 
+        Developer by <a href="https://github.com/sihann" class="hover:text-purple-500 transition-colors duration-300">Delania Oliveira</a> 
+      </p>
+    </footer>
+    
+    
+
   </body>
 </html>
