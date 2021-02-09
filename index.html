@@ -91,7 +91,7 @@
 
     </main>
 
-    <section id="add-transaction">
+    <section class="add-transaction">
       <div class="right-10 bottom-10 fixed">
         <span class="flex h-16 w-16">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -103,30 +103,39 @@
     </section>
     
     <!--Modal Overlay-->
-    <section id="modal-overlay" class="w-full h-full bg-black bg-opacity-70 fixed top-0 flex items-center justify-center">
-      <div class="bg-gray-100 p-10 relative">
+    <section class="modal-overlay invisible opacity-0 hidden w-full h-full bg-black bg-opacity-70 fixed top-0 flex items-center justify-center">
+      <div class="bg-gray-100 p-10 relative w-11/12 sm:max-w-lg">
           <div id="form" class="w-full">
-            <h2>New transaction</h2>
-            <form action="" class="w-full">
-              <div class="input-group">
+            
+            <h2 class="text-gray-700 text-2xl text-bold mb-3.5">New transaction</h2>
+            
+            <form action="" class="max-w-md">
+            
+              <div class="input-group mb-3">
                 <label class="sr-only" for="description">Description</label>
                 <input class="w-full p-3 rounded" type="text" id="description" name="description" placeholder="Description">
               </div>  
 
-              <div class="input-group">  
+              <div class="input-group mb-2">  
                 <label class="sr-only" for="amount">0,00</label>
                 <input class="w-full p-3 rounded" type="number" id="amount" name="amount" step="0.01" autocomplete="off" placeholder="0,00">
-                <p class="">Use comma(,) for decimal separator</p>
+                <small class="text-gray-500">Use comma(,) for decimal separator</small>
               </div>  
 
-              <div class="input-group">  
-                <label for="date">Date</label>
-                <input class="w-full p-3 rounded" type="date" id="date" name="date" placeholder="dd/mm/aaaa">  
+              <div class="input-group mb-2">  
+                <label class="sr-only" for="date">Date</label>
+                <input class="w-full p-3 rounded text-gray-400" type="date" id="date" name="date" placeholder="dd/mm/aaaa">  
               </div>
-              <div class="input-group actions">
-                <a href="#">Cancelar </a>
-                <button id="save">Salvar</button>
+              
+              <div class="input-group add mb-2">
+                <small class="text-gray-700 cursor-pointer hover:text-purple-500 transition-colors duration-300">+ Transactions</small>
               </div>
+
+              <div class="input-group actions flex flex-row gap-6">
+                <a class="cancel w-full h-12 flex justify-center items-center border-2 border-red-400 text-red-400 rounded hover:border-red-500 hover:text-red-500 transition-colors duration-300" href="#">Cancel</a>
+                <button class="w-full h-12 bg-green-400 text-white rounded hover:bg-green-500 transition-colors duration-300" id="salve">Salve</button>
+              </div>
+            
             </form>
           </div>
       </div>
@@ -141,6 +150,6 @@
     </footer>
     
     
-
+  <script src="scripts.js"></script>  
   </body>
 </html>
