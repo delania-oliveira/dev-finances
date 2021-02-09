@@ -19,10 +19,4 @@ main {
     background-color: #68D391;
   } 
 
- /* icon add transaction */ 
-  #add-transaction.active {
-    display: none;
-    opacity: 0;  
-    visibility: hidden;
-  }
 
