@@ -6,6 +6,8 @@
 
 ## :rainbow: Preview
 
+- [Live preview here](https://maratonadiscover-alpha.vercel.app/)
+
 <p align="center"><img src="screenshot.png" width="75%" hight="auto" alt="preview dev.finances"></p>
 
 ## :computer: Technologies
