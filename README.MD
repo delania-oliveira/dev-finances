@@ -32,4 +32,4 @@ Let me know if you find some issue
 
 [MIT License](https://github.com/sihann/maratonadiscover/blob/main/LICENSE)
 
-<p align="center">Make with :heart_purple: by Delania Oliveira.</p>
+<p align="center">Make with  :purple_heart: by Delania Oliveira.</p>
