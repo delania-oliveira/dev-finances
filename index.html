@@ -5,7 +5,6 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>dev.finance$</title>
-      <!-- <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet"> -->
       <script src="https://cdn.tailwindcss.com"></script>
       <link href="style.css" rel="stylesheet"> 
   </head>
@@ -95,7 +94,7 @@
 
               <div class="input-group mb-2">  
                 <label class="sr-only" for="amount">0,00</label>
-                <input class="w-full p-3 rounded" type="number" id="amount" name="amount" step="0.01" autocomplete="off" placeholder="0,00">
+                <input class="w-full p-3 rounded" type="number" id="amount" name="amount" min="0.00" step="0.01" autocomplete="off" placeholder="0,00">
                 <small class="text-gray-500">Use comma(,) for decimal separator</small>
               </div>  
 
