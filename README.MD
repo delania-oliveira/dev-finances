@@ -20,16 +20,16 @@
 
 ```bash
 # clone repository
-git clone https://github.com/sihann/maratonadiscover.git
+git clone https://github.com/delania-oliveira/dev-finances.git
 
 ```
 ## :space_invader: Issues
 
 Let me know if you find some issue
-[Report here](https://github.com/sihann/maratonadiscover/issues)
+[Report here](https://github.com/delania-oliveira/dev-finances/issues)
 
 ####  :pushpin: License
 
-[MIT License](https://github.com/sihann/maratonadiscover/blob/main/LICENSE)
+[MIT License](https://github.com/delania-oliveira/dev-finances/blob/main/LICENSE)
 
 <p align="center">Make with  :purple_heart: by Delania Oliveira.</p>
